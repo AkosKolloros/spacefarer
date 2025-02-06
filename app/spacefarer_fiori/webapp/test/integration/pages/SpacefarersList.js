@@ -8,7 +8,7 @@ sap.ui.define(['sap/fe/test/ListReport'], function(ListReport) {
 
     return new ListReport(
         {
-            appId: 'spacefarerfioriapp.spacefarerfiori',
+            appId: 'candidateview.spacefarerfiori',
             componentId: 'SpacefarersList',
             contextPath: '/Spacefarers'
         },

@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "spacefarerfioriapp.spacefarerfiori",
+    "id": "candidateview.spacefarerfiori",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,11 +13,11 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.16.3",
-      "toolsId": "7e53f152-6a27-444d-ae5d-5e0084821942"
+      "toolsId": "54e686fc-9a8f-4b33-81b9-e7de4372a59f"
     },
     "dataSources": {
       "mainService": {
-        "uri": "/odata/v4/admin/",
+        "uri": "/spacefarers/",
         "type": "OData",
         "settings": {
           "annotations": [],
@@ -49,8 +49,7 @@
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
-        "sap.fe.templates": {},
-        "sap.f": {}
+        "sap.fe.templates": {}
       }
     },
     "contentDensities": {
@@ -61,7 +60,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "spacefarerfioriapp.spacefarerfiori.i18n.i18n"
+          "bundleName": "candidateview.spacefarerfiori.i18n.i18n"
         }
       },
       "": {
@@ -82,28 +81,17 @@
       "css": []
     },
     "routing": {
-      "config": {
-        "flexibleColumnLayout": {
-          "defaultTwoColumnLayoutType": "TwoColumnsBeginExpanded",
-          "defaultThreeColumnLayoutType": "ThreeColumnsMidExpanded"
-        },
-        "routerClass": "sap.f.routing.Router"
-      },
+      "config": {},
       "routes": [
         {
           "pattern": ":?query:",
           "name": "SpacefarersList",
-          "target": [
-            "SpacefarersList"
-          ]
+          "target": "SpacefarersList"
         },
         {
           "pattern": "Spacefarers({key}):?query:",
           "name": "SpacefarersObjectPage",
-          "target": [
-            "SpacefarersList",
-            "SpacefarersObjectPage"
-          ]
+          "target": "SpacefarersObjectPage"
         }
       ],
       "targets": {
@@ -130,9 +118,7 @@
                 }
               }
             }
-          },
-          "controlAggregation": "beginColumnPages",
-          "contextPattern": ""
+          }
         },
         "SpacefarersObjectPage": {
           "type": "Component",
@@ -143,21 +129,8 @@
               "editableHeaderContent": false,
               "contextPath": "/Spacefarers"
             }
-          },
-          "controlAggregation": "midColumnPages",
-          "contextPattern": "/Spacefarers({key})"
+          }
         }
-      }
-    },
-    "rootView": {
-      "viewName": "sap.fe.templates.RootContainer.view.Fcl",
-      "type": "XML",
-      "async": true,
-      "id": "appRootView"
-    },
-    "extends": {
-      "extensions": {
-        "sap.ui.controllerExtensions": {}
       }
     }
   },

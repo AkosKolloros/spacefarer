@@ -1,16 +1,16 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Thu Feb 06 2025 17:42:24 GMT+0100 (Central European Standard Time)|
+|**Generation Date and Time**<br>Thu Feb 06 2025 18:58:16 GMT+0100 (Central European Standard Time)|
 |**App Generator**<br>@sap/generator-fiori-elements|
 |**App Generator Version**<br>1.16.3|
 |**Generation Platform**<br>Visual Studio Code|
 |**Template Used**<br>List Report Page V4|
 |**Service Type**<br>Local Cap|
-|**Service URL**<br>http://localhost:4004/odata/v4/admin/|
+|**Service URL**<br>http://localhost:4004/spacefarers/|
 |**Module Name**<br>spacefarer_fiori|
 |**Application Title**<br>Galactic Spacefarer Adventure|
-|**Namespace**<br>spacefarer_fiori_app|
+|**Namespace**<br>candidate_view|
 |**UI5 Theme**<br>sap_horizon_dark|
 |**UI5 Version**<br>1.132.1|
 |**Enable Code Assist Libraries**<br>True|
@@ -21,7 +21,7 @@
 
 ## spacefarer_fiori
 
-Galactic Spacefarer Adventure System
+Galactic Spacefarer Adventure SAP Fiori application.
 
 ### Starting the generated app
 

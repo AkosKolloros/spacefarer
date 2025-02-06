@@ -1,7 +1,7 @@
 {
   "name": "spacefarer_fiori",
   "version": "0.0.1",
-  "description": "Galactic Spacefarer Adventure System",
+  "description": "Galactic Spacefarer Adventure SAP Fiori application.",
   "keywords": [
     "ui5",
     "openui5",
