@@ -20,13 +20,9 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-spacefarer_fiori": "cds watch --open spacefarer_fiori/webapp/index.html?sap-ui-xx-viewCache=false",
-    "watch-project1": "cds watch --open project1/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-spacefarer_fiori": "cds watch --open spacefarer_fiori/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "sapux": [
-    "app/spacefarer_fiori",
-    "app/project1",
-    "app/spacefarer_fiori",
     "app/spacefarer_fiori"
   ],
   "cds": {

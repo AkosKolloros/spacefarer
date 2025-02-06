@@ -14,8 +14,8 @@ entity Spacefarers : managed {
         name               : localized String           @mandatory;
         description        : localized String;
         spacesuitColor     : String;
-        navigationSkill    : Integer;
-        stardustCollection : Integer;
+        navigationSkill    : Integer                    @mandatory;
+        stardustCollection : Integer                    @mandatory;
         originPlanet       : Association to Planets     @assert.target;
         department         : Association to Departments @assert.target;
         position           : Association to Positions   @assert.target;
