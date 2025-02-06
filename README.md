@@ -1,25 +1,15 @@
-# Getting Started
+# Galactic Spacefarer Adventure
 
-Welcome to your new project.
+Welcome to my implementation of the Galactic Spacefarer Adventure System.
 
-It contains these folders and files, following our recommended project layout:
+This is a SAP CAP and SAP Fiori application with SAP SQLite database.
 
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
+## Current progress
 
-
-## Next Steps
-
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
-
-
-## Learn More
-
-Learn more at https://cap.cloud.sap/docs/get-started/.
+2025/02/07
+Spacefaring Data Model - I'm mostly happy with the data model, but subject to change
+Service Definition - Pretty basic, I need to refine my knowledge
+Event Handlers - POC validation of skills, email needs refactoring
+Fiori List page - basic initialization, WIP
+Cosmic Object Page - not started yet, WIP
+Auth - Not added yet, WIP
