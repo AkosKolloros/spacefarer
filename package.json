@@ -7,6 +7,9 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^8",
+    "@sap/eslint-plugin-ui5-jsdocs": "^2.0.5",
+    "@sapui5/ts-types": "^1.92.2",
+    "eslint": "^7.32.0",
     "express": "^4"
   },
   "devDependencies": {
@@ -14,6 +17,10 @@
     "@cap-js/sqlite": "^1.8.0"
   },
   "scripts": {
-    "start": "cds-serve"
-  }
+    "start": "cds-serve",
+    "watch-spacefarer_fiori": "cds watch --open spacefarer_fiori/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/spacefarer_fiori"
+  ]
 }
