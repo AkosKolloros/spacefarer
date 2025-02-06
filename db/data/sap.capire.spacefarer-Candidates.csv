@@ -1,7 +1,0 @@
-ID,name,description,spacesuitColor,navigationSkill,originPlanet_ID,department_ID,position_ID
-1,Ghost,tall,white,200,100,200,300
-2,Mouse,short,grey,150,101,200,300
-3,Rebel,fast,blue,230,100,200,301
-4,Trinity,agile,black,300,101,201,302
-5,Deckard,smart,purple,500,100,201,302
-6,Picard,Excelent leadership,red,1000,100,201,303

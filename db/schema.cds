@@ -9,15 +9,16 @@ entity Planets : managed {
         sizeRadius  : Integer;
 }
 
-entity Candidates : managed {
-    key ID              : Integer;
-        name            : localized String;
-        description     : localized String;
-        spacesuitColor  : String;
-        navigationSkill : Integer;
-        originPlanet    : Association to Planets;
-        department      : Association to Departments;
-        position        : Association to Positions;
+entity Spacefarers : managed {
+    key ID                 : Integer;
+        name               : localized String;
+        description        : localized String;
+        spacesuitColor     : String;
+        navigationSkill    : Integer;
+        stardustCollection : Integer;
+        originPlanet       : Association to Planets;
+        department         : Association to Departments;
+        position           : Association to Positions;
 }
 
 entity Departments : managed {

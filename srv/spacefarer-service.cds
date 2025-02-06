@@ -1,10 +1,10 @@
 using {sap.capire.spacefarer as my} from '../db/schema';
 
-service CandidateService @(path: '/candidates') {
+service SpacefarerService @(path: '/spacefarers') {
 
     @readonly
-    entity Candidates as
-        select from my.Candidates {
+    entity Spacefarers as
+        select from my.Spacefarers {
             *,
             originPlanet.name as originPlanet,
             department.name   as department,
