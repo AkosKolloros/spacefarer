@@ -1,8 +1,9 @@
 using {sap.capire.spacefarer as my} from '../db/schema';
 
+@impl    : 'srv/spacefarer-service.js'
+@requires: 'authenticated-user'
 service SpacefarerService @(path: '/spacefarers') {
 
-    @readonly
     entity Spacefarers as
         select from my.Spacefarers {
             *,
@@ -14,7 +15,4 @@ service SpacefarerService @(path: '/spacefarers') {
             createdBy,
             modifiedBy
         };
-
-    @requires: 'authenticated-user'
-    action newCandidate(name : String);
 }
