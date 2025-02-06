@@ -13,11 +13,15 @@ Spacefaring Data Model
 
 Service Definition  
     Pretty basic, I need to refine my knowledge
+
 Event Handlers
     POC validation of skills, email needs refactoring
+
 Fiori List page
     basic initialization, WIP
+
 Cosmic Object Page
     not started yet, WIP
+
 Auth
     Not added yet, WIP
