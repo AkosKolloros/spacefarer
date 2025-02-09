@@ -1,16 +1,7 @@
 const cds = require('@sap/cds');
 
-const nodemailer = require("nodemailer");
+const { transporter } = require('./transporter');
 
-const transporter = nodemailer.createTransport({
-    host: 'smtp.ethereal.email',
-    port: 587,
-    secure: false,
-    auth: {
-        user: 'jewell.gusikowski19@ethereal.email',
-        pass: 'dmPsHNGFmEs7fHxWnB'
-    }
-});
 class SpacefarerService extends cds.ApplicationService {
     init() {
         const { Spacefarers } = this.entities
@@ -38,7 +29,7 @@ class SpacefarerService extends cds.ApplicationService {
     async sendEmail() {
         const info = await transporter.sendMail({
             from: "<jewell.gusikowski19@ethereal.email>",
-            to: "kollorosa@gmail.com, csigusz21@gmail.com",
+            to: "kollorosa@gmail.com",
             subject: "Welcome to the Galactic Spacefarer LLC",
             html: "<b>Dear Spacefarer name</b>", // html body
         });
