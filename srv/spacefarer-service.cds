@@ -1,7 +1,6 @@
 using {sap.capire.spacefarer as my} from '../db/schema';
 
-@impl    : 'srv/spacefarer-service.js'
-@requires: 'authenticated-user'
+//@impl: 'srv/spacefarer-service.js'
 service SpacefarerService @(path: '/spacefarers') {
 
     entity Spacefarers as

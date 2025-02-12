@@ -6,6 +6,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@sap/approuter": "^19.0.0",
     "@sap/cds": "^8",
     "@sap/eslint-plugin-ui5-jsdocs": "^2.0.5",
     "@sapui5/ts-types": "^1.92.2",
@@ -27,6 +28,7 @@
   ],
   "cds": {
     "requires": {
+      "auth": "mocked",
       "SpacefarerService": {
         "kind": "odata"
       }

@@ -7,6 +7,11 @@ entity Planets : managed {
         name        : localized String @mandatory;
         description : localized String;
         sizeRadius  : Integer;
+        spacefarers : Association to many Spacefarers
+                          on spacefarers.originPlanet = $self;
+        departments : Association to many Departments
+                          on departments.location = $self;
+
 }
 
 entity Spacefarers : managed {
@@ -27,6 +32,9 @@ entity Departments : managed {
         description : localized String;
         budget      : Integer;
         location    : Association to Planets @assert.target;
+        spacefarers : Association to many Spacefarers
+                          on spacefarers.department = $self;
+
 }
 
 entity Positions : managed {
@@ -34,4 +42,7 @@ entity Positions : managed {
         name        : localized String @mandatory;
         description : localized String;
         salary      : Integer;
+        spacefarers : Association to many Spacefarers
+                          on spacefarers.position = $self;
+
 }

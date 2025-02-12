@@ -1,0 +1,26 @@
+{
+    "xsappname": "spacefarer",
+    "tenant-mode": "dedicated",
+    "description": "Security profile of Spacefarer App",
+    "scopes": [
+        {
+            "name": "uaa.user",
+            "description": "UAA"
+        }
+    ],
+    "role-templates": [
+        {
+            "name": "Token_Exchange",
+            "description": "UAA",
+            "scope-references": [
+                "uaa.user"
+            ]
+        }
+    ],
+    "oauth2-configuration": {
+        "redirect-uris": [
+            "https://*.hana.ondemand.com/**",
+            "https://*.applicationstudio.cloud.sap/**"
+        ]
+    }
+}

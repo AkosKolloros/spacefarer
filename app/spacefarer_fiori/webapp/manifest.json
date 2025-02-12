@@ -49,7 +49,8 @@
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
-        "sap.fe.templates": {}
+        "sap.fe.templates": {},
+        "sap.f": {}
       }
     },
     "contentDensities": {
@@ -81,17 +82,28 @@
       "css": []
     },
     "routing": {
-      "config": {},
+      "config": {
+        "flexibleColumnLayout": {
+          "defaultTwoColumnLayoutType": "TwoColumnsBeginExpanded",
+          "defaultThreeColumnLayoutType": "ThreeColumnsMidExpanded"
+        },
+        "routerClass": "sap.f.routing.Router"
+      },
       "routes": [
         {
           "pattern": ":?query:",
           "name": "SpacefarersList",
-          "target": "SpacefarersList"
+          "target": [
+            "SpacefarersList"
+          ]
         },
         {
           "pattern": "Spacefarers({key}):?query:",
           "name": "SpacefarersObjectPage",
-          "target": "SpacefarersObjectPage"
+          "target": [
+            "SpacefarersList",
+            "SpacefarersObjectPage"
+          ]
         }
       ],
       "targets": {
@@ -118,7 +130,9 @@
                 }
               }
             }
-          }
+          },
+          "controlAggregation": "beginColumnPages",
+          "contextPattern": ""
         },
         "SpacefarersObjectPage": {
           "type": "Component",
@@ -129,9 +143,17 @@
               "editableHeaderContent": false,
               "contextPath": "/Spacefarers"
             }
-          }
+          },
+          "controlAggregation": "midColumnPages",
+          "contextPattern": "/Spacefarers({key})"
         }
       }
+    },
+    "rootView": {
+      "viewName": "sap.fe.templates.RootContainer.view.Fcl",
+      "type": "XML",
+      "async": true,
+      "id": "appRootView"
     }
   },
   "sap.fiori": {
