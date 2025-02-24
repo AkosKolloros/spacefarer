@@ -95,3 +95,7 @@ annotate service.Spacefarers with @(
         }
     ],
 );
+
+annotate service.Spacefarers with {
+    name @UI.MultiLineText: true
+};

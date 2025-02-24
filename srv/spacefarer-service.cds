@@ -2,7 +2,7 @@ using {sap.capire.spacefarer as my} from '../db/schema';
 
 @impl: 'srv/spacefarer-service.js'
 service SpacefarerService @(path: '/spacefarers') {
-
+    @odata.draft.enabled
     entity Spacefarers as
         select from my.Spacefarers {
             *,
@@ -14,4 +14,5 @@ service SpacefarerService @(path: '/spacefarers') {
             createdBy,
             modifiedBy
         };
+
 }

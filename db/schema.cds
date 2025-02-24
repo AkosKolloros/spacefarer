@@ -3,7 +3,7 @@ using {managed} from '@sap/cds/common';
 namespace sap.capire.spacefarer;
 
 entity Planets : managed {
-    key ID          : UUID;
+    key ID          : Integer;
         name        : localized String @mandatory;
         description : localized String;
         sizeRadius  : Integer;
@@ -15,7 +15,7 @@ entity Planets : managed {
 }
 
 entity Spacefarers : managed {
-    key ID                 : UUID;
+    key ID                 : Integer;
         name               : localized String           @mandatory;
         description        : localized String;
         spacesuitColor     : String;
@@ -27,7 +27,7 @@ entity Spacefarers : managed {
 }
 
 entity Departments : managed {
-    key ID          : UUID;
+    key ID          : Integer;
         name        : localized String       @mandatory;
         description : localized String;
         budget      : Integer;
@@ -38,7 +38,7 @@ entity Departments : managed {
 }
 
 entity Positions : managed {
-    key ID          : UUID;
+    key ID          : Integer;
         name        : localized String @mandatory;
         description : localized String;
         salary      : Integer;
