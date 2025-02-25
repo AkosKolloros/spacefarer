@@ -1,0 +1,26 @@
+https://cap.cloud.sap/docs/get-started/
+https://cap.cloud.sap/docs/guides/domain-modeling
+
+Bookshop
+https://cap.cloud.sap/docs/get-started/in-a-nutshell
+https://github.com/AkosKolloros/bookshop?tab=readme-ov-file
+
+Galactic Spacefarer Adventure
+https://github.com/AkosKolloros/spacefarer
+
+srv/services.cds
+https://cap.cloud.sap/docs/cds/
+https://cap.cloud.sap/docs/cds/cdl
+    https://cap.cloud.sap/docs/cds/cdl#services
+https://cap.cloud.sap/docs/guides/domain-modeling#don-t-interpret-uuids
+
+srv/services.js
+https://cap.cloud.sap/docs/node.js/
+https://cap.cloud.sap/docs/guides/providing-services#service-definitions
+
+db sqlite
+https://cap.cloud.sap/docs/guides/databases-sqlite
+
+db/data/schema.cds
+https://cap.cloud.sap/docs/cds/cdl#entity-definitions
+
